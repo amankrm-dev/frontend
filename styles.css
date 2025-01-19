@@ -1,337 +1,176 @@
-
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: #2b2b2b;
-    color: white;
+* {
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    box-sizing: border-box;
 }
 
-header {
+.container {
+    width: 100%;
+
+}
+
+nav {
     display: flex;
-    justify-content: space-around;
     align-items: center;
-    padding: 10px 20px;
-    background-color: #50adbd;
-    flex: 1;
+    justify-content: space-between;
 
-}
-
-header img {
-    height: 60px;
-    width: 60px;
-    border-radius: 50%;
-}
-
-
-nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    border
+    padding-left: 10%;
+    padding-right: 10%;
+    margin: 2px;
+    background-color: aliceblue;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    border-radius: 40px;
+    height: 80px;
 }
 
 nav ul li {
-    margin: 0 15px;
+    display: inline-block;
+    list-style-type: none;
+    padding: 10px 20px;
+
 }
 
 nav ul li a {
-    color: white;
-    text-decoration: none;
+    color: black;
     font-weight: bold;
+    text-decoration: none;
 }
 
 nav ul li a:hover {
-    text-decoration: underline;
-    color: rgb(225, 53, 53);
+    color: red;
+    transition: .3s;
 }
 
-.hero {
-    text-align: center;
-    padding: 100px 20px;
-    ;
-    color: white;
-    position: relative;
+nav img {
+    height: 75px;
+    width: 80px;
+    border-radius: 50%;
 }
 
-.hero::before {
-    content: '';
+button {
+    border: none;
+    padding: 10px 30px;
+    border-radius: 30px;
+    font-size: small;
+    font-weight: bold;
+
+}
+
+.btn1 {
+    background: whitesmoke;
+}
+
+.btn2 {
+    background: rgba(255, 60, 60, 0.967);
+}
+
+.btn1 a {
+    color: red;
+}
+
+.btn1 a img {
+    height: 15px;
+    width: 15px;
+
+}
+
+.btn2 a {
+    color: black;
+}
+
+ .content img> .homeimg {
+    height: 100%;
+    width: 100%;
+}
+.info{
+    position:absolute;
+    top: 30%;
+    left: 30%;
+    background-color: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(10px);
+    padding: 20px;
+    width: 60%;
+    height: 40%;
+    border-radius: 20px;
+    
+    
+}
+.info button {
+    background-color: rgba(255, 60, 60, 0.967);
+  
+}
+.info button:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+    transition: .3s;
+}
+.info button a {
+    color: black;
+    font-weight: bold;
+}
+
+
+
+/* -----------------------------------------Sign in sign up Page from Here now-------------------------------------- */
+
+
+body {
+
+    background-size: cover;
+    display: flex;
+    background-image: url('background image.jpg');
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+
+  
+  body::before {
+    content: "";
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.5);
-    z-index: 1;
-}
-
-.hero-content {
-    position: relative;
-    z-index: 2;
-}
-
-.hero h1 {
-    font-size: 2.5rem;
-    margin-bottom: 20px;
-    color: white;
-}
-
-.hero p {
-    font-size: 1.2rem;
-    margin-bottom: 40px;
-    color: white;
-}
-
-.hero button {
-    padding: 10px 20px;
-    background-color: #ff5722;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 1rem;
-}
-
-.hero button:hover {
-    background-color: #e64a19;
-}
-
-.background-image {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
+    background-image: url('background image.jpg');
     background-size: cover;
-    background-position: center;
-}
+    filter: blur(8px);
+    z-index: -1;
+  }
 
-header {
-    position: fixed;
-
-    top: 0;
-    width: 100%;
-    z-index: 1000;
-}
-
-body {
-    padding-top: 70px;
-    /* Adjust this value based on the height of your header */
-}
-.logo2 img{
-    border-radius: 50%;
-    height: 200px;
-    width: 200px;
-    
-}
-/* -------------------------------------------------Alert Page----------------------------------------------- */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Sans Serif', Arial, sans-serif;
-}
-
-body {
-    display: flex;
-    height: 100vh;
-    background-color: #1a1a2e;
-    color: white;
-}
-
-.sidebar {
-    width: 20%;
-    background-color: #0f3460;
-    display: flex;
-    flex-direction: column;
+  .signin-container {
+    background: rgba(255, 255, 255, 0.8);
     padding: 20px;
-}
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 300px;
+  }
 
-.sidebar img {
-    width: 80%;
-    margin-bottom: 30px;
-}
-
-.sidebar a {
-    text-decoration: none;
-    color: white;
-    margin: 10px 0;
-    font-size: 18px;
-    padding: 10px;
-    border-radius: 8px;
-}
-
-.sidebar a:hover {
-    background-color: #16213e;
-}
-
-.main-content {
-    width: 80%;
-    background-color: #f3f3f3;
-    color: #333;
-    padding: 20px;
-    position: relative;
-}
-
-.main-content h1 {
-    font-size: 28px;
-    margin-bottom: 20px;
-}
-
-.main-content p {
-    margin-bottom: 20px;
-    font-size: 16px;
-    line-height: 1.5;
-}
-
-.form-container {
-    background-color: white;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.form-container input,
-.form-container textarea {
+  .signin-container input {
     width: 100%;
     padding: 10px;
     margin: 10px 0;
     border: 1px solid #ccc;
-    border-radius: 4px;
-    font-size: 16px;
-}
+    border-radius: 5px;
+  }
 
-.form-container button {
-    background-color: #f30909;
-    color: white;
-    font-weight: bolder;
-    padding: 10px 15px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-}
-
-.form-container button:hover {
-    background-color: #16213e;
-}
-
-.emergency-alert {
-    position: absolute;
-    bottom: 20px;
-    right: 20px;
-    background-color: red;
-    color: white;
-    padding: 10px 20px;
-    border-radius: 50%;
-    font-weight: bold;
-    font-size: 14px;
-    text-align: center;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-}
-
-/*------------------------------------------------Sign in page------------------------------------------------------------------ */
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body {
-    font-family: Arial, sans-serif;
-    background: linear-gradient(135deg, #1d925b, #43a27c);
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .container {
-    position: relative;
-    width: 100%;
-    max-width: 450px;
-    background-image: url('leaf-background.jpg'); /* Add your leaf image */
-    background-size: cover;
-    background-position: center;
-    border-radius: 20px;
-    overflow: hidden;
-  }
-  
-  .form-box {
-    background: rgba(255, 255, 255, 0.9); /* White with transparency */
-    margin: 20px;
-    border-radius: 15px;
-    padding: 30px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    text-align: center;
-  }
-  
-  h1 {
-    font-size: 24px;
-    color: #1d925b;
-  }
-  
-  p {
-    font-size: 14px;
-    color: #555;
-    margin-bottom: 20px;
-  }
-  
-  p a {
-    color: #1d925b;
-    text-decoration: none;
-    font-weight: bold;
-  }
-  
-  form input {
+  .signin-container button {
     width: 100%;
     padding: 10px;
     margin: 10px 0;
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    font-size: 14px;
-  }
-  
-  .sign-up-btn {
-    width: 100%;
-    padding: 10px;
-    background: #1d925b;
-    color: white;
     border: none;
-    border-radius: 10px;
-    font-size: 16px;
+    border-radius: 20px;
+    background-color: #007BFF;
+    color: white;
     cursor: pointer;
-    transition: background 0.3s;
   }
-  
-  .sign-up-btn:hover {
-    background: #167044;
+
+  .signin-container button.signup {
+    background-color: #e60b0b;
   }
-  
-  .social-signup {
-    margin-top: 20px;
-  }
-  
-  .social-signup p {
-    margin-bottom: 10px;
-    color: #555;
-  }
-  
-  .icons {
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-  }
-  
-  .icons img {
-    width: 40px;
-    height: 40px;
-    cursor: pointer;
-    transition: transform 0.3s;
-  }
-  
-  .icons img:hover {
-    transform: scale(1.1);
-  }
-  
