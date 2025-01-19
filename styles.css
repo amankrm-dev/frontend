@@ -83,12 +83,13 @@ button {
     color: black;
 }
 
- .content img> .homeimg {
+.content img>.homeimg {
     height: 100%;
     width: 100%;
 }
-.info{
-    position:absolute;
+
+.info {
+    position: absolute;
     top: 30%;
     left: 30%;
     background-color: rgba(255, 255, 255, 0.3);
@@ -97,17 +98,20 @@ button {
     width: 60%;
     height: 40%;
     border-radius: 20px;
-    
-    
+
+
 }
+
 .info button {
     background-color: rgba(255, 60, 60, 0.967);
-  
+
 }
+
 .info button:hover {
     background-color: rgba(255, 255, 255, 0.3);
     transition: .3s;
 }
+
 .info button a {
     color: black;
     font-weight: bold;
@@ -127,10 +131,10 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
-  }
+}
 
-  
-  body::before {
+
+body::before {
     content: "";
     position: absolute;
     top: 0;
@@ -141,26 +145,26 @@ body {
     background-size: cover;
     filter: blur(8px);
     z-index: -1;
-  }
+}
 
-  .signin-container {
+.signin-container {
     background: rgba(255, 255, 255, 0.8);
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: center;
     width: 300px;
-  }
+}
 
-  .signin-container input {
+.signin-container input {
     width: 100%;
     padding: 10px;
     margin: 10px 0;
     border: 1px solid #ccc;
     border-radius: 5px;
-  }
+}
 
-  .signin-container button {
+.signin-container button {
     width: 100%;
     padding: 10px;
     margin: 10px 0;
@@ -169,8 +173,181 @@ body {
     background-color: #007BFF;
     color: white;
     cursor: pointer;
-  }
+}
 
-  .signin-container button.signup {
+.signin-container button.signup {
     background-color: #e60b0b;
-  }
+}
+
+
+/* -------------------------------Student Concern And Response System ----------------------------------------------- */
+body .alertpage {
+    background-image: url('../background\ image.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.container2 {
+    width: 50%;
+    margin: 100px 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin: 10px 0 5px;
+    color: #333;
+}
+
+input,
+textarea {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.back-button {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.image-placeholder {
+    width: 100%;
+    height: 200px;
+    background-color: #f0f0f0;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+.concerns {
+    width: 20%;
+    margin: 100px 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.concerns h2 {
+    color: #333;
+}
+
+.concerns ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+.main-content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.form-container {
+    width: 60%;
+}
+
+.image-container {
+    width: 35%;
+    margin-left: 20px;
+    opacity: 0.8;
+    /* Add transparency effect */
+    z-index: 1;
+    /* Ensure the container is above the background */
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* body .alertpage2 ::before  {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('SCRS image.jpeg');
+    background-size: 25%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    z-index: -1;
+    /* Ensure the background is behind all content */
+} */
+
+.cta-button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.cta-button:hover {
+    background-color: #218838;
+}
+
+.cta-info {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 12px;
+    color: #555;
+}
+
+.cta-button {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 50px;
+    /* Make the button rounded */
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.cta-button:hover {
+    background-color: darkred;
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: #aaa;
+    opacity: 1;
+    /* Override default opacity */
+}
