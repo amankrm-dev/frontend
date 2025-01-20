@@ -306,8 +306,9 @@ textarea {
     background-repeat: no-repeat;
     background-attachment: fixed;
     z-index: -1;
+    }
     /* Ensure the background is behind all content */
-} */
+*/
 
 .cta-button {
     background-color: #28a745;
@@ -351,3 +352,77 @@ textarea::placeholder {
     opacity: 1;
     /* Override default opacity */
 }
+
+
+/* -------------------------------------About us------------------------------------------------ - */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    position: relative;
+}
+
+.background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: blur(8px);
+    z-index: -1;
+}
+
+.container {
+    position: relative;
+    z-index: 1;
+}
+
+.main-section {
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+}
+
+.about-section, .team-section, .contact-section {
+    margin-bottom: 20px;
+}
+
+.about-title, .team-title, .contact-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.about-description, .team-name, .team-role, .contact-description, .contact-item {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.team-member {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.team-photo {
+    border-radius: 50%;
+    margin-right: 10px;
+    width: 50px;
+    height: 50px;
+}
+.about-description{
+    color:rgb(255, 147, 7);
+    font-weight: bolder;
+    text-wrap: wrap;
+}
+.about-description {
+    border: 2px solid #ff9307;
+    padding: 10px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: rgba(0, 0, 0, 0.3);
+    font-size: 18px;
+    color: white;
+}
+ 
